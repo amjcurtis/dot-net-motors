@@ -15,8 +15,10 @@ namespace dot_net_motors.Classes
         {
             if (numOfTrailers > 0)
             {
+                Console.WriteLine($"Got me {numOfTrailers} trailer(s)!");
                 return true;
             }
+            Console.WriteLine("No trailers for me.");
             return false;
         }
 

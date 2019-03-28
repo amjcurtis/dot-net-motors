@@ -4,15 +4,17 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
+    // Concrete class
     class ToyotaTacoma : Truck
     {
-        // Override properties
+        // Overridden properties
         public override int NumberOfSeats { get; set; } = 4;
         public override decimal Price { get; set; } = 28000m;
 
-        // Override methods
+        // Overridden virtual methods
         public override bool GoOffRoading()
         {
+            Console.WriteLine("Tacoma can go off-road");
             return true;
         }
 
