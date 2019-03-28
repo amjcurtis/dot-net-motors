@@ -43,6 +43,8 @@ namespace dot_net_motors
             semi.GoOffRoading();
             Console.WriteLine(semi.FuelType);
             semi.Drive();
+
+            semi.PrimeEngine();
             
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
@@ -57,6 +59,8 @@ namespace dot_net_motors
             Console.WriteLine(crv.FuelType);
             Console.WriteLine(crv.PlayRadio());
             crv.Drive();
+
+            crv.PrimeEngine();
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
@@ -73,6 +77,12 @@ namespace dot_net_motors
             v70.OpenBackHatch();
             v70.PlayRadio();
 
+            // Interface method
+            v70.Transmission();
+
+            // Interface property
+            Console.WriteLine(v70.Speeds);
+
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
             Console.WriteLine(" ");
@@ -86,6 +96,10 @@ namespace dot_net_motors
             Console.WriteLine(subby.NumberOfSeats);
             Console.WriteLine(subby.PlayRadio());
             subby.OpenBackHatch();
+
+            // Interface method
+            subby.Transmission();
+            Console.WriteLine(subby.Speeds);
 
             //////////////////////////////////////////////////
             Console.WriteLine("\nHit Enter to exit program");

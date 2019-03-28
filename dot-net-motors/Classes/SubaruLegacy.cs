@@ -19,5 +19,11 @@ namespace dot_net_motors.Classes
         {
             return "Subaru's got tunes";
         }
+
+        // Implement interface
+        public override string Transmission()
+        {
+            return "I have a gear-driven transmission.";
+        }
     }
 }

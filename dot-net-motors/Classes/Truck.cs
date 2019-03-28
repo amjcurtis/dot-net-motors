@@ -4,7 +4,7 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
-    public abstract class Truck : Automobile
+    public abstract class Truck : Automobile, IStartEngine
     {
         // Overridden properties
         public override decimal Price { get; set; } = 30000m;
@@ -25,6 +25,13 @@ namespace dot_net_motors.Classes
         public virtual bool GoOffRoading()
         {
             Console.WriteLine("Goin' off-roading!");
+            return true;
+        }
+
+        // Implement interface
+        public virtual bool PrimeEngine()
+        {
+            Console.WriteLine("Need to prime engine!");
             return true;
         }
     }
