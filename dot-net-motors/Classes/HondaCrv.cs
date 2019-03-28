@@ -4,7 +4,23 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
-    class HondaCrv
+    // Concrete class
+    class HondaCrv : Car
     {
+        // Overridden properties
+        public override int NumberOfSeats { get; set; } = 5;
+        public override decimal Price { get; set; } = 24000m;
+        public override bool SunRoof { get; set; } = true;
+
+        // Overridden virtual methods
+        public override void Drive()
+        {
+            Console.WriteLine("Let's drive!");
+        }
+
+        public override string PlayRadio()
+        {
+            return "Got me some tunes!";
+        }
     }
 }
