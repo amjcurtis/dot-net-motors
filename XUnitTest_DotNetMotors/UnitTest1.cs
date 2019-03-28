@@ -71,9 +71,6 @@ namespace XUnitTest_DotNetMotors
             // Arrange
             SubaruLegacy subby = new SubaruLegacy();
 
-            // Act
-            subby.FuelType = "gasoline";
-
             // Assert
             Assert.Equal("gasoline", subby.FuelType);
         }
@@ -102,8 +99,7 @@ namespace XUnitTest_DotNetMotors
 
         }
 
-        
-        
+
         // Price
         // NumberOfSeats
         // FuelType
