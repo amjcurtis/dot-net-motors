@@ -5,7 +5,7 @@ using System.Text;
 namespace dot_net_motors.Classes
 {
     // Concrete class
-    class VolvoV70 : StationWagon
+    public class VolvoV70 : StationWagon
     {
         // Overridden properties
         public override decimal Price { get; set; } = 38000m;

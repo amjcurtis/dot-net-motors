@@ -4,7 +4,7 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
-    abstract class StationWagon : Car
+    public abstract class StationWagon : Car
     {
         // Overridden properties
         public override int NumberOfSeats { get; set; } = 5;

@@ -5,7 +5,7 @@ using System.Text;
 namespace dot_net_motors.Classes
 {
     // Concrete class
-    class ToyotaTacoma : Truck
+    public class ToyotaTacoma : Truck
     {
         // Overridden properties
         public override int NumberOfSeats { get; set; } = 4;

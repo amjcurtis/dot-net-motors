@@ -5,7 +5,7 @@ using System.Text;
 namespace dot_net_motors.Classes
 {
     // Concrete class
-    class SubaruLegacy : StationWagon
+    public class SubaruLegacy : StationWagon
     {
         public override decimal Price { get; set; } = 29000m;
         public override bool SunRoof { get; set; } = false;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
-    abstract class Truck : Automobile
+    public abstract class Truck : Automobile
     {
         // Overridden properties
         public override decimal Price { get; set; } = 30000m;

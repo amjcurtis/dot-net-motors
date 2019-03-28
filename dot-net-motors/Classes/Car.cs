@@ -4,7 +4,7 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
-    abstract class Car : Automobile
+    public abstract class Car : Automobile
     {
         // Overridden properties
         public override string FuelType { get; set; } = "gasoline";

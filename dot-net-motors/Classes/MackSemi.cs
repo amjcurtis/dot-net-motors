@@ -5,7 +5,7 @@ using System.Text;
 namespace dot_net_motors.Classes
 {
     // Concrete class
-    class MackSemi : Truck
+    public class MackSemi : Truck
     {
         // Overridden properties
         public override int NumberOfSeats { get; set; } = 3;

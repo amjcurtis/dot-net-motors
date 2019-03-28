@@ -5,7 +5,7 @@ using System.Text;
 namespace dot_net_motors.Classes
 {
     // Concrete class
-    class HondaCrv : Car
+    public class HondaCrv : Car
     {
         // Overridden properties
         public override int NumberOfSeats { get; set; } = 5;
