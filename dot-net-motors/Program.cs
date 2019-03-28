@@ -37,14 +37,40 @@ namespace dot_net_motors
             semi.GoOffRoading();
             Console.WriteLine(semi.FuelType);
             semi.Drive();
+            
+            //////////////////////////////////////////////////
+            Console.WriteLine("////////////////////////");
 
+            HondaCrv crv = new HondaCrv();
+
+            Console.WriteLine(crv.NumberOfSeats);
+            Console.WriteLine(crv.Price);
+            Console.WriteLine(crv.FuelType);
+            Console.WriteLine(crv.PlayRadio());
+            crv.Drive();
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
+
+            VolvoV70 v70 = new VolvoV70();
+
+            Console.WriteLine(v70.NumberOfSeats);
+            Console.WriteLine(v70.SunRoof);
+
+            v70.Drive();
+            v70.OpenBackHatch();
+            v70.PlayRadio();
+
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
-            //////////////////////////////////////////////////
-            Console.WriteLine("////////////////////////");
+
+            SubaruLegacy subby = new SubaruLegacy();
+
+            Console.WriteLine(subby.CarriesPeople);
+            Console.WriteLine(subby.Price);
+            Console.WriteLine(subby.NumberOfSeats);
+            Console.WriteLine(subby.PlayRadio());
+            subby.OpenBackHatch();
 
             //////////////////////////////////////////////////
             Console.WriteLine("\nHit Enter to exit program");

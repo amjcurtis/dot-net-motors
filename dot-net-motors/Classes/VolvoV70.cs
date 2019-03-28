@@ -4,6 +4,7 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
+    // Concrete class
     class VolvoV70 : StationWagon
     {
         // Overridden properties

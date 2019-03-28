@@ -6,13 +6,11 @@ namespace dot_net_motors.Classes
 {
     abstract class Car : Automobile
     {
-        // Abstract properties
+        // Overridden properties
         public override string FuelType { get; set; } = "gasoline";
 
         // Virtual properties
-        public virtual string SunRoof() {
-            return "Got me a sun roof!";
-        }
+        public virtual bool SunRoof { get; set; } = false;
 
         // Abstract methods
         public abstract string PlayRadio();
