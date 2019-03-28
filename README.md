@@ -49,8 +49,8 @@ Select and open ```DotNetMotors.sln```
 
 ##### Application Screenshot
 
+![Visualization of Classes](assets/DotNetMotors_SysDesign.png)
 ![Screenshot of App](assets/dotnet-motors-screenshot.png)
-![Visualization of Classes](https://docs.google.com/presentation/d/1pu0JRDVtyWP18OB4uCgRqLasH37HekwKiz4OBKPk4TE/edit?usp=sharing)
 
 ------------------------------
 
