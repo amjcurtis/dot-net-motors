@@ -12,7 +12,7 @@ namespace dot_net_motors.Classes
         public abstract string FuelType { get; set; }
 
         // Virtual properties
-        public bool CarriesPeople { get; set; }
+        public virtual bool CarriesPeople { get; set; } = true;
 
         // Abstract methods
         public abstract void Drive();
