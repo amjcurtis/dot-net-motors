@@ -21,5 +21,13 @@ namespace dot_net_motors.Classes
         {
             return "Volvo plays tunes!";
         }
+
+        // Implement interface
+        public override int Speeds { get; set; } = 6;
+
+        public override string Transmission()
+        {
+            return "I, Volvo V70, have a belt-driven transmission.";
+        }
     }
 }
