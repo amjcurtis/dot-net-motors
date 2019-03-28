@@ -99,7 +99,43 @@ namespace XUnitTest_DotNetMotors
 
         }
 
+        [Fact]
+        public void CanReturnBoolFromCarriesPeople()
+        {
+            // Arrange
+            ToyotaTacoma tacoma = new ToyotaTacoma();
 
+            // Assert
+            Assert.True(tacoma.CarriesPeople);
+        }
+
+        [Fact]
+        public void CanReturnBoolFromHaulTrailer()
+        {
+            MackSemi semi = new MackSemi();
+            Assert.True(semi.CarriesPeople);
+        }
+
+        [Fact]
+        public void CanReturnBoolFalseFromGoOffRoading()
+        {
+            MackSemi semi = new MackSemi();
+            Assert.False(semi.GoOffRoading());
+        }
+
+        [Fact]
+        public void CanReturnBoolTrueFromGoOffRoading()
+        {
+            ToyotaTacoma tacoma = new ToyotaTacoma();
+            Assert.True(tacoma.GoOffRoading());
+        }
+
+        [Fact]
+        public void CanReturnStringFromPlayRadio()
+        {
+            SubaruLegacy subby = new SubaruLegacy();
+            Assert.Equal("Subaru's got tunes", subby.PlayRadio());
+        }
         // Price
         // NumberOfSeats
         // FuelType
