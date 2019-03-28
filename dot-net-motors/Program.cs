@@ -11,6 +11,9 @@ namespace dot_net_motors
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
+            Console.WriteLine(" ");
+            Console.WriteLine("ToyotaTacoma class");
+            Console.WriteLine(" ");
 
             ToyotaTacoma tacoma = new ToyotaTacoma();
 
@@ -28,6 +31,9 @@ namespace dot_net_motors
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
+            Console.WriteLine(" ");
+            Console.WriteLine("MackSemi class");
+            Console.WriteLine(" ");
 
             MackSemi semi = new MackSemi();
 
@@ -42,6 +48,9 @@ namespace dot_net_motors
             
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
+            Console.WriteLine(" ");
+            Console.WriteLine("HondaCrv class");
+            Console.WriteLine(" ");
 
             HondaCrv crv = new HondaCrv();
 
@@ -55,6 +64,9 @@ namespace dot_net_motors
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
+            Console.WriteLine(" ");
+            Console.WriteLine("VolvoV70class");
+            Console.WriteLine(" ");
 
             VolvoV70 v70 = new VolvoV70();
 
@@ -73,6 +85,9 @@ namespace dot_net_motors
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
+            Console.WriteLine(" ");
+            Console.WriteLine("SubaruLegacy class");
+            Console.WriteLine(" ");
 
             SubaruLegacy subby = new SubaruLegacy();
 
