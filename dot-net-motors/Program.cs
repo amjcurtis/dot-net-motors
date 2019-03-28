@@ -37,6 +37,8 @@ namespace dot_net_motors
             semi.GoOffRoading();
             Console.WriteLine(semi.FuelType);
             semi.Drive();
+
+            semi.PrimeEngine();
             
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");
@@ -48,6 +50,8 @@ namespace dot_net_motors
             Console.WriteLine(crv.FuelType);
             Console.WriteLine(crv.PlayRadio());
             crv.Drive();
+
+            crv.PrimeEngine();
 
             //////////////////////////////////////////////////
             Console.WriteLine("////////////////////////");

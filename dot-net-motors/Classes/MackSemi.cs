@@ -5,7 +5,7 @@ using System.Text;
 namespace dot_net_motors.Classes
 {
     // Concrete class
-    public class MackSemi : Truck
+    public class MackSemi : Truck, IStartEngine
     {
         // Overridden properties
         public override int NumberOfSeats { get; set; } = 3;
@@ -22,6 +22,13 @@ namespace dot_net_motors.Classes
         public override void Drive()
         {
             Console.WriteLine("Semi is driving!");
+        }
+
+        // Implement interface
+        public override bool PrimeEngine()
+        {
+            Console.WriteLine("Need to prime engine big-time for semi!");
+            return true;
         }
     }
 }

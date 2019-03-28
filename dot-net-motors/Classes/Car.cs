@@ -4,7 +4,7 @@ using System.Text;
 
 namespace dot_net_motors.Classes
 {
-    public abstract class Car : Automobile
+    public abstract class Car : Automobile, IStartEngine
     {
         // Overridden properties
         public override string FuelType { get; set; } = "gasoline";
@@ -14,5 +14,12 @@ namespace dot_net_motors.Classes
 
         // Abstract methods
         public abstract string PlayRadio();
+
+        // Implement interface
+        public virtual bool PrimeEngine()
+        {
+            Console.WriteLine("No need to prime engine!");
+            return false;
+        }
     }
 }
