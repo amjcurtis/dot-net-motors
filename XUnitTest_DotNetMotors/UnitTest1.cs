@@ -96,7 +96,6 @@ namespace XUnitTest_DotNetMotors
 
             // Assert
             Assert.False(subby.SunRoof);
-
         }
 
         [Fact]
@@ -110,10 +109,20 @@ namespace XUnitTest_DotNetMotors
         }
 
         [Fact]
-        public void CanReturnBoolFromHaulTrailer()
+        public void CanSemiReturnBoolFromHaulTrailer()
         {
             MackSemi semi = new MackSemi();
-            Assert.True(semi.CarriesPeople);
+            int numOfTrailers = 2;
+
+            Assert.True(semi.HaulTrailer(numOfTrailers));
+        }
+
+        [Fact]
+        public void CanTacomaReturnBoolFromHaulTrailer()
+        {
+            ToyotaTacoma tacoma = new ToyotaTacoma();
+            int numOfTrailers = 1;
+            Assert.True(tacoma.HaulTrailer(numOfTrailers));
         }
 
         [Fact]
@@ -136,16 +145,55 @@ namespace XUnitTest_DotNetMotors
             SubaruLegacy subby = new SubaruLegacy();
             Assert.Equal("Subaru's got tunes", subby.PlayRadio());
         }
-        // Price
-        // NumberOfSeats
-        // FuelType
-        // SunRoof
 
+        [Fact]
+        public void CanTacomaImplementIStartEngine()
+        {
+            ToyotaTacoma tacoma = new ToyotaTacoma();
+            Assert.True(tacoma.PrimeEngine());
+        }
 
-        // CarriesPeople - bool
-        // HaulTrailer - bool
-        // GoOffRoading - bool
-        // PlayRadio - string
+        [Fact]
+        public void CanSemiImplementIStartEngine()
+        {
+            MackSemi semi = new MackSemi();
+            Assert.True(semi.PrimeEngine());
+        }
+
+        [Fact]
+        public void CanHondaImplementIStartEngine()
+        {
+            HondaCrv crv = new HondaCrv();
+            Assert.False(crv.PrimeEngine());
+        }
+
+        [Fact]
+        public void CanVolvoImplementIStartEngine()
+        {
+            VolvoV70 v70 = new VolvoV70();
+            Assert.False(v70.PrimeEngine());
+        }
+
+        [Fact]
+        public void CanSubaruImplementIStartEngine()
+        {
+            SubaruLegacy subby = new SubaruLegacy();
+            Assert.False(subby.PrimeEngine());
+        }
+
+        [Fact]
+        public void CanVolvoImplementITransmission()
+        {
+            VolvoV70 v70 = new VolvoV70();
+            Assert.Equal("I, Volvo V70, have a belt-driven transmission.", v70.Transmission());
+        }
+
+        [Fact]
+        public void CanSubaruImplementITransmission()
+        {
+            SubaruLegacy subby = new SubaruLegacy();
+            Assert.Equal("I have a gear-driven transmission.", subby.Transmission());
+        }
 
     }
 }
