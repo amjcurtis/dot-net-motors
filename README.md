@@ -57,5 +57,6 @@ Select and open ```DotNetMotors.sln```
 ## Change Log
 
 1.1: *Built out classes, wrote tests and documentation* - 3/27/19
+1.2 *Added further tests for interfaces, non-void methods* - 3/31/19
 
 ------------------------------
