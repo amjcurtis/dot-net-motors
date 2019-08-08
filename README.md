@@ -1,5 +1,4 @@
 # .NET Motors Dealership
-#### Lab05-dotnet-motors
 ##### *Author: Andrew Curtis*
 
 ------------------------------
